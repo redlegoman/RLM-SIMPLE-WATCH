@@ -173,9 +173,10 @@ static void main_window_load(Window *window) {
   text_layer_set_text_color(s_day_layer, GColorFolly); // theday of the week
   text_layer_set_text_color(s_date_layer, GColorFolly); // date
   text_layer_set_text_color(s_time_layer, GColorPastelYellow );  // time
-  text_layer_set_text_color(s_left_layer, TEXT);  // battery
-  text_layer_set_text_color(s_right_layer, TEXT); // seconds
-  
+  text_layer_set_text_color(s_left_layer, TEXT);  // battery  //
+  text_layer_set_text_color(s_right_layer, TEXT); // seconds  // it seems like changing the color of these two
+                                                              // makes the watchface crash when notifications
+                                                              // are interacted with ?
   /*
     window_set_background_color(s_main_window, GColorBlack);
     text_layer_set_text_color(s_time_layer, GColorYellow );
