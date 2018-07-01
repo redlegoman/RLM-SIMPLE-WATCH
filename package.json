@@ -1,0 +1,75 @@
+{
+    "author": "Andy McDade",
+    "dependencies": {},
+    "keywords": [],
+    "name": "rlm-simple-watch",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "RLM Simple Watch",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "KEY_INVERSE": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/menuimage1.png",
+                    "name": "IMAGE_MENU_2",
+                    "type": "png"
+                },
+                {
+                    "file": "images/screenshot.png",
+                    "name": "IMAGE_SCREENSHOT_1",
+                    "type": "png"
+                },
+                {
+                    "characterRegex": "[0-9:]",
+                    "compatibility": "2.7",
+                    "file": "fonts/EmporiumNF.ttf",
+                    "name": "FONT_TIME_68",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:]",
+                    "compatibility": "2.7",
+                    "file": "fonts/Sans Sara.ttf",
+                    "name": "FONT_SARA_53",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[a-zA-Z0-9:]",
+                    "compatibility": "2.7",
+                    "file": "fonts/Sans Sara.ttf",
+                    "name": "FONT_SARA_27",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[A-Za-z0-9:.]",
+                    "compatibility": "2.7",
+                    "file": "fonts/renegadolaser.ttf",
+                    "name": "FONT_RENEGADO_14",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:.]",
+                    "compatibility": "2.7",
+                    "file": "fonts/renegadolaser.ttf",
+                    "name": "FONT_RENEGADO_39",
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "02f061c2-d846-41ff-ab55-84681d854768",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.101.0"
+}

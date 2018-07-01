@@ -101,7 +101,7 @@ static void main_window_load(Window *window) {
   //day
   s_day_layer = text_layer_create(GRect(1, 15, 144, 35));
   text_layer_set_background_color(s_day_layer, GColorClear);
-  //text_layer_set_text_color(s_day_layer, GColorWhite);
+  text_layer_set_text_color(s_day_layer, GColorPictonBlue);
   text_layer_set_text(s_day_layer, "Thisaday");
   
   // TIME
@@ -158,26 +158,37 @@ static void main_window_load(Window *window) {
   
 //-------------------------------------------------------------------------------------------
   
-  GColor BG;
-  GColor TEXT;
-  bool inversed = persist_read_bool(KEY_INVERSE);
-  if(inversed == true){
-    BG = GColorWhite;    
-    TEXT = GColorBlack;
-  } else {
-    BG = GColorBlack;
-    TEXT = GColorWhite;
-  }
+ GColor BG;
+ GColor TEXT;
+ // bool inversed = persist_read_bool(KEY_INVERSE);
+  //if(inversed == true){
+   // BG = GColorWhite;    
+    //TEXT = GColorBlack;
+  //} else {
+ BG = GColorBlack;
+ TEXT = GColorWhite;
+ // }
+  
   window_set_background_color(s_main_window, BG);
-  text_layer_set_text_color(s_day_layer, TEXT);
-  text_layer_set_text_color(s_date_layer, TEXT);
-  text_layer_set_text_color(s_time_layer, TEXT);
-  text_layer_set_text_color(s_left_layer, TEXT);
-  text_layer_set_text_color(s_right_layer, TEXT);
+  text_layer_set_text_color(s_day_layer, GColorFolly); // theday of the week
+  text_layer_set_text_color(s_date_layer, GColorFolly); // date
+  text_layer_set_text_color(s_time_layer, GColorPastelYellow );  // time
+  text_layer_set_text_color(s_left_layer, TEXT);  // battery
+  text_layer_set_text_color(s_right_layer, TEXT); // seconds
+  
+  /*
+    window_set_background_color(s_main_window, GColorBlack);
+    text_layer_set_text_color(s_time_layer, GColorYellow );
+    text_layer_set_text_color(s_day_layer, GColorFolly );
+    text_layer_set_text_color(s_date_layer, GColorFolly );
+    text_layer_set_text_color(s_right_layer, GColorWhite); // seconds
+  text_layer_set_text_color(s_left_layer, GColorLightGray); // battery
+  */
+}
 
   
   
-}
+
 
 
 

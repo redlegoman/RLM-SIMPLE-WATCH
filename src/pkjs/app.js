@@ -3,7 +3,7 @@ Pebble.addEventListener('ready', function() {
 });
 
 Pebble.addEventListener('showConfiguration', function() {
-  var url = 'http://10.10.10.3/pebble';
+  var url = 'https://cdn.rawgit.com/redlegoman/RLM-SIMPLE-WATCH/master/web/index.html';
   
   /*
   
